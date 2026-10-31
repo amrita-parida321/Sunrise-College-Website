@@ -1,0 +1,392 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-padding {
+    padding: 70px 0;
+}
+
+h2 {
+    color: #102c54;
+    font-weight: bold;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: #102c54;
+    padding: 15px 0;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #ffc107;
+}
+
+.apply-btn {
+    background-color: #ffc107;
+    color: #102c54;
+    padding: 9px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+/* Home Section */
+
+.hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #102c54;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* About Section */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-image,
+.about-content {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+/* Courses Section */
+
+.courses-section {
+    background-color: #f2f6fc;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h3 {
+    color: #102c54;
+    margin-bottom: 12px;
+}
+
+
+/* Announcements */
+
+.announcement-section {
+    background-color: white;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.announcement-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.announcement-item {
+    width: 100%;
+}
+
+.announcement-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: 0.3s;
+}
+
+.announcement-card:hover {
+    transform: translateY(-5px);
+}
+
+.announcement-label {
+    display: inline-block;
+    background-color: #e5edff;
+    color: #102c54;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.announcement-card h5 {
+    color: #102c54;
+    margin-bottom: 10px;
+}
+
+.announcement-card p {
+    color: #555;
+}
+/* Contact Section */
+
+.contact-section {
+    background-color: #f2f6fc;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contactForm {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3f80e8;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background-color: #3f80e8;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #102c54;
+    transition: 0.3s;
+}
+/* Footer */
+
+.footer {
+    background-color: #102c54;
+    color: white;
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 900px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #menu-toggle:checked ~ .nav-menu {
+        display: flex;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .hero {
+        padding: 100px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .announcement-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+}

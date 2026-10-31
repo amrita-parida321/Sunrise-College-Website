@@ -1,0 +1,17 @@
+
+{
+    "announcements": [
+        {
+            "title": "Admissions Open 2026-27",
+            "description": "Applications are now open for the new academic session. Apply today and start your journey with us."
+        },
+        {
+            "title": "Annual Cultural Fest",
+            "description": "Join us for our annual cultural celebration featuring music, dance, competitions and exciting activities."
+        },
+        {
+            "title": "Campus Placement Drive",
+            "description": "Our placement drive is coming soon. Students are encouraged to prepare their resumes and participate."
+        }
+    ]
+}
